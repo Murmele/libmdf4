@@ -394,7 +394,7 @@ int main(int argc, char *argv[]) {
     const auto& channel_groups = data_group.get_channel_groups();
     if (channel_group_index == -1) {
       if (channel_groups.size() > 1) {
-        fprintf(stderr, _("More than one channel group in file. Use `-g' option to choose channel group.\n"));
+        fprintf(stderr, _("More than one channel group in file. Use `-p' option to choose channel group.\n"));
         return EXIT_FAILURE;
       } else {
         channel_group_index = 0;
